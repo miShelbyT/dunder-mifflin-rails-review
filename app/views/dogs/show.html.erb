@@ -1,0 +1,9 @@
+<h1>Dog Show Page</h1>
+
+
+<h1><%= @dog.name %></h1>
+<%= "Breed: #{@dog.breed}" %><br>
+<%= "Age: #{@dog.age}" %><br>
+<% Employee.all.select do |employee| %>
+   <p><%= employee.dog == @dog? "Owner: #{employee.first_name } #{employee.last_name}" : nil %></p>
+<% end %>
